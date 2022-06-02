@@ -1,0 +1,40 @@
+.item {
+    display: flex;
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 20px;
+    flex-direction: column;
+    height:auto;
+    overflow:hidden;
+    -webkit-transition: height .3s ease;
+    -moz-transition: height .3s ease;
+    -o-transition: height .3s ease;
+    transition: height .3s ease;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+    align-items: center;
+    cursor: pointer;
+}
+.info {
+    opacity: 0.7;
+    overflow-y: scroll;
+    padding-right: 20px;
+    height: 0;
+    transition: .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.info.slideDown {
+    margin-top: 20px;
+    height: 100px;
+    overflow-y: scroll;
+}
+.icon {
+    padding: 5px;
+    color: #691493;
+    background: #6914931a;
+    border-radius: 50%;
+}
+
